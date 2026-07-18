@@ -1,9 +1,8 @@
-streamlit
-langchain
-langchain-google-genai
-langchain-community
-langchain-openai
-langchain-chroma
-chromadb
-pypdf
-sentence-transformers
+streamlit==1.35.0
+langchain==0.2.6
+langchain-google-genai==1.0.6
+langchain-community==0.2.6
+langchain-core==0.2.11
+chromadb==0.5.3
+pypdf==4.2.0
+sentence-transformers==3.0.1
