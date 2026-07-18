@@ -4,7 +4,12 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_community.document_loaders import PyPDFDirectoryLoader
-from langchain.chains import RetrievalQA
+# ... existing code ...
+# Cambia la línea 7 de: from langchain.chains import RetrievalQA
+# Por esta:
+from langchain.chains import create_retrieval_chain
+from langchain.chains.combine_documents import create_stuff_documents_chain
+# ... existing code ...
 
 st.set_page_config(page_title="Asesor Mype AI", page_icon="⚖️")
 st.title("⚖️ Asesor Inteligente para Mypes")
